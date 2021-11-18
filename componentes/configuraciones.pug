@@ -1,0 +1,10 @@
+-var títulos = ["PlatziGames", "Título principal"]
+-var subtitulos = ["Título 1", "Título 2", "Título 3"]
+-var usuario = "Camilú"
+-var enlaces = ["Acerca", "Noticias", "Contacto"]
+mixin caja(imagen, titulo, contenido)
+    .caja
+        .caja__imagen: img(src="images/"+imagen)
+        .caja__contenido
+            h3=titulo
+            p=contenido

@@ -1,0 +1,10 @@
+extend componentes/plantilla.pug
+block contenidos
+	main
+		section.intro
+			.intro__imagen: img(src="images/imagen.png")
+			include componentes/intro.pug
+		.contenido
+			+caja("imagen.png", subtitulos[0], "Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem debitis est possimus placeat nesciunt omnis, earum aut voluptatibus laborum veritatis natus incidunt quisquam dolor deserunt ut pariatur temporibus fugiat nisi?")
+			+caja("imagen.png", subtitulos[1], "Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem debitis est possimus placeat nesciunt omnis, earum aut voluptatibus laborum veritatis natus incidunt quisquam dolor deserunt ut pariatur temporibus fugiat nisi?")
+			+caja("imagen.png", subtitulos[2], "Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem debitis est possimus placeat nesciunt omnis, earum aut voluptatibus laborum veritatis natus incidunt quisquam dolor deserunt ut pariatur temporibus fugiat nisi?")
